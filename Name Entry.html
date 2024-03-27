@@ -69,25 +69,25 @@
             <br>
             <br>
         </div>
-<div class="center-container">
-  <form id="passwordForm" onsubmit="checkPassword(event)">
-    <input type="text" placeholder="FirstName LastName" name="password" required>
-    <button type="submit">Submit</button>
-  </form>
-</div>
-
-<script>
-function checkPassword(event) {
-  event.preventDefault(); // Prevent form submission
-
-  var password = document.getElementById('password').value;
-  if (password === 'Geoffrey Lewis') {
-    window.location.href="congrats.html"; // Redirect to another page
-  } else {
-    alert('Incorrect password. Please try again.');
-  }
-}
-</script>
+        <div class="center-container">
+          <form id="passwordForm" onsubmit="checkPassword(event)">
+            <input type="text" placeholder="FirstName LastName" name="password" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        
+        <script>
+        function checkPassword(event) {
+          event.preventDefault(); // Prevent form submission
+        
+          var password = document.getElementsByName('password')[0].value;
+          if (password === 'Geoffrey Lewis') {
+            window.location.href = "congrats.html"; // Redirect to another page
+          } else {
+            alert('Incorrect password. Please try again.');
+          }
+        }
+        </script>
 
 </div>
 <br>
